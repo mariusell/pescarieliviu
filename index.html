@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
 <body>
 
    <header>
-    
-    <img src="pescarialuiliviu.jpg" alt="logo">
-    
-    
+        <div class="logo">
+            <img src="pescarialuiliviu.jpg" alt="logo">
+        </div>
+        <button class="nav-menu">Meniu</button>
+        <div class="nav-bar">
+            <div class="nav-bar--link"><a href="">Acasa</a></div>
+            <div class="nav-bar--link"><a href="">Momeala</a></div>
+            <div class="nav-bar--link"><a href="">Accesorii</a></div>
+            <div class="nav-bar--link"><a href="">Blog</a></div>
+            <div class="nav-bar--link"><a href="">Contact</a></div>
+        </div>
    </header>
     
-       
+    <script>
+        const btn = document.querySelector(".nav-menu")
+        const bar = document.querySelector('.nav-bar')
 
-
-    
+        btn.addEventListener("click", () => {
+            if(bar.className === 'nav-bar'){
+                bar.classList.add ("active")
+            }
+            else{
+                bar.classList = "nav-bar"
+            }
+        })
+    </script>
 </body>
-
-
 </html>

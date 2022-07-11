@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans' ,sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+header,.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar {
+    width: 60%;
+}
+
+.nav-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        flex-direction: column;
+    }
+    .nav-bar {
+        width: 95%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .nav-bar {
+        display: none;
+    }
+    .nav-menu {
+        margin-top: 7px;
+        display: flex;
+        background-color: #38518c;
+        padding: 10px;
+        color: #f1f1f1;
+        font-size: 15px;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        background-color: #f1f1f1;  
+    }
+    .active .nav-bar--link{
+        padding: 12px;
+
+    }
+}
+
+.nav-bar .nav-bar--link {
+    padding: 8px;
+    
+}
+.nav-bar .nav-bar--link a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    
+    transition: all .3s ease-in;
+    padding:8px;
+    border-radius: 3px;
+}
+.nav-bar .nav-bar--link a:hover {
+    padding: 15px;
+    background-color: #325ac1;
+    color: #f1f1f1;
+}
