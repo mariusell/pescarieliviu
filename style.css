@@ -109,3 +109,12 @@ img {
     object-fit: contain;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 950px) {
+    .art {
+        flex-direction: column;  
+    }
+    .text{
+        margin-bottom: 15px;
+    }
+}
